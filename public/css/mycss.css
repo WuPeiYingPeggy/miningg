@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.bi-people-fill{
+    margin: 20px 20px 0;
+    float: right;
+    width:10%;
+    height: 10%;
+}
+
+/* 中間內容區 #Aec17b*/
+.contentBody{
+    height: 100vh;
+    background-color: #Aec17b;
+
+}
+
+.contentBody::after{
+    position: relative;
+}
+
+.coinDiv{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 金幣圖大小 */
+.coinImg{
+    width: 9vh;
+    }
+
+/* 金幣值(input) */
+.coin{
+    /* 設定coin input樣式 */
+    background-color: #Aec17b;
+	outline:none;  
+	border:0px;
+    margin: 0;
+    padding: 0;
+    width: 100px;;
+    color:#ffd700;
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+#username{
+    background-color: #Aec17b;
+	outline:none;  
+	border:0px;
+    margin: 0;
+    padding: 0;
+    width:80px;
+    color:black;
+    font-size: 28px;
+    margin:20px 20px 0;
+}
+
+.time{
+    background-color: #232b10;
+    color:aliceblue;
+	outline:none;  
+	border:0px;
+    padding: 5px;
+    position: absolute;
+    top:17%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+.krtek{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50% ,-50%);
+
+}
+
+@media screen and (min-width:768px) {
+    .bi-people-fill{
+        width:70px;
+        height: 70px;
+    }
+
+    .krtek{
+        /* width: 30%; */
+        top:60%;
+    }
+
+    .coinDiv{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .time{
+        top:8%;
+    }
+}

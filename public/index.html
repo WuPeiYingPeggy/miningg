@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mycss.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>鼴鼠挖礦</title>
+  </head>
+
+  <body>
+    <div>
+      <!-- 右上角好友，bootstrap icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill"
+        viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+        <path fill-rule="evenodd"
+          d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+      </svg>
+
+    </div>
+    <!-- 中間內容區 -->
+    <div class="contentBody">
+      <input type="text" name='username' value="" id="username"></input>
+
+      <div class="coinDiv">
+        <!-- 金幣圖 -->
+        <img class="coinImg" src="./img/coin.png" alt="">
+        <!-- 金幣值 -->
+        <input type="text" class="coin" value='' name='item' id="coin">
+      </div>
+
+      
+      <button class="krtek">
+        <img class="krtek" src="./img/krtek.png" alt="">
+      </button>
+      <input type="hidden" class='time' value='' name='time'>
+   
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./js/fetch.js"></script>
+    <script src="./js/myJs.js"></script>
+
+  </body>
+
+</html>
